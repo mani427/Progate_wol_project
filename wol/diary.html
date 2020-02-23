@@ -221,7 +221,46 @@ WHERE column LIKE '%XXXX%'
       SELECT columns  
       FROM table1  
       RIGHT [OUTER] JOIN table2  
-      ON table1.column = table2.column;  </p></body>
+      ON table1.column = table2.column;  </p>
+      <ul>
+      <li>
+        <a href="#">
+          <h2>Natural Join</h2>
+          <p><textarea>syntax: SELECT *
+            FROM table1
+            NATURAL JOIN table2;</textarea></p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <h2>Self Join</h2>
+          <p><textarea>syntax: SELECT column_name(s)
+            FROM table1 T1, table1 T2
+            WHERE condition;</textarea></p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <h2>Right outer join</h2>
+          <p><textarea>syntax: SELECT column1, column2... 
+            FROM table_A
+            RIGHT JOIN table_B ON join_condition
+            WHERE row_condition</textarea></p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <h2>Left outer join</h2>
+          <p><textarea>syntax:SELECT column1, column2... 
+            FROM table_A
+            LEFT JOIN table_B ON join_condition
+            WHERE row_condition</textarea></p>
+        </a>
+      </li>
+    </ul>
+      
+      
+      </body>
     </div>
 
 <link href=" " rel="stylesheet">
